@@ -11,13 +11,12 @@ app.engine('pug', require('pug').__express);
 app.set('views', pathLib.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-
 const webRouter = require('./webRouter');
 
 app.use('/', webRouter);
 
 app.use((req, res, next) => {
-    next(createError(404));
+    next(createError(404, 'This page does not exist!'));
 });
 
 app.use((err, req, res, next) => {
