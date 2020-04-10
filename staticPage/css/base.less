@@ -10,7 +10,7 @@
 
 @fir-screen-bgc: #333230;
 
-@box-shadom-resume: 0 -2 6px rgba(0,0,0,.07);
+@box-shadom-resume: 0 -2px 6px rgba(0,0,0,.07);
 @font-color-link: #4A90E2;
 
 @font-color-crumbs: #121212;
@@ -20,7 +20,8 @@
 @font-color-article-time: #BFBFBF;
 @font-color-article-tip: #CBCBCB;
 @bgc-article-tag: #F9F9F9;
-@box-shadom-article: 2 2 9px rgba(0,0,0,.13);
+// @bgc-article-tag: #FAFAFA;
+@box-shadom-article: 2px 2px 9px rgba(0,0,0,.13);
 
 * {
     margin: 0;
@@ -35,6 +36,13 @@ a {
     text-decoration: none;
     color: #000000;
     -webkit-tap-highlight-color: transparent;
+}
+a.link {
+    color: @font-color-link;
+    text-decoration: underline;
+}
+a:hover {
+    opacity: .5;
 }
 li {
     list-style: none;
@@ -52,19 +60,17 @@ input {
 .f-right {
     float: right;
 }
-.clearfix{
+.clearfix:after{
     content: "";
     display: block;
+    width: 0;
     height: 0;
     visibility: hidden;
     clear: both;
 }
-.clearfix{
+.clearfix:after{
     zoom: 1;
 }
 
-a.link {
-    color: @font-color-link;
-    text-decoration-line: line;
-}
+
 

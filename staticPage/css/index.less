@@ -1,1 +1,370 @@
 @import "base.less";
+
+@top-bar-height: 70px;
+
+.top-bar{
+    background-color: @fir-screen-bgc;
+    height: @top-bar-height;
+
+    .logo h1 {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        font-weight: 300;
+
+        a{
+            color: #666666;
+            line-height: @top-bar-height;
+        }
+        a:hover {
+            text-decoration: none;
+            color: none;
+        }
+    }
+
+    .nav {
+        ul {
+            margin: 0;
+            float: right;
+
+            li {
+                float: left;
+                margin-left: 32px;
+                display: block;
+    
+                a {
+                    color: @nav-font-color-usual;
+                    line-height: @top-bar-height;
+                }
+            }
+            li:first-child {
+                margin-left: 0;
+            }
+            li.active {
+                a{
+                    color: @nav-font-color-active;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@site-intro-height: 380px;
+.site-intro {
+    margin-top: 70px;
+    height: @site-intro-height;
+    background-color: @fir-screen-bgc;
+    text-align: center;
+
+    .container {
+        position: relative;
+        height: 100%;
+
+        h1 {
+            margin-top: 64px;
+            margin-bottom: 0;
+            font-size: 4em;
+            color: white;
+        }
+        p {
+            margin-top: 24px;
+            margin-bottom: 0;
+            font-size: @font-12;
+            color: #D7D4CA;
+        }
+        img {
+            margin-top: 66px;
+            width: 665px;
+            border: 5px solid #F5F6F7;
+        }
+    }
+}
+
+[class *= "-header"]{
+    text-align: center;
+
+    h2 {
+        margin: 0;
+        margin-top: 48px;
+        font-size: 30px;
+        font-weight: 300;
+        color: @fir-screen-bgc;
+    }
+    p {
+        margin: 0;
+        margin-top: 12px;
+        font: @font-14;
+        color: #7E7E7E;
+    }
+}
+
+a.load-more, a.download-resume {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 12px 0 8px 0;
+    background-color: #f8f8f8;
+    border: 1px solid #FAFBFC;
+    border-radius: 4px;
+    font-size: @font-12;
+    color: #a4a4a4;
+    text-align: center;
+}
+a.load-more {
+    margin-top: 36px;
+    background-color: rgba(255,255,255,.6);
+}
+a.load-more:hover, a.download-resume:hover {
+    background-color: #5990D1;
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.personal-resume {
+    .tags {
+        padding-top: 10px;
+
+        > div {
+            float: left;
+            margin-right: 8px;
+            color: white;
+            text-align: center;
+
+            span {
+                display: block;
+                float: left;
+                padding: 3px 10px;
+                font-weight: 300;
+                
+                i {
+                    display: block;
+                    font-style: normal;
+                    transform: scale(.8);
+                }
+            }
+            span:first-child {
+                border-radius: 3px 0 0 3px;
+                background-color: #666666;
+            }
+            span:last-child {
+                background-color: #5990D1;
+                border-radius: 0 3px 3px 0;
+            }
+        }
+    }
+
+    .personal-resume-content {
+        padding: 38px 0 32px;
+        margin-top: 30px;
+        background-color: white;
+        box-shadow: @box-shadom-resume;
+
+        h3 {
+            display: block;
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #E1E1E1;
+            font-size: @font-18;
+            font-weight: normal;
+        }
+
+        .basic-info ul {
+            display: flex;
+            padding: 24px 70px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            li {
+                display: block;
+                float: left;
+                width: 25%;
+                font-size: @font-12;
+                color: #808080;
+
+                span {
+                    display: block;
+                    padding-left: 20px;
+                    line-height: 18px;
+                    
+                }
+            }
+
+            li:nth-child(-n+4) {
+                margin-bottom: 16px;
+            }
+            li:nth-child(1) span {
+                background: url(../imgs/icon-name.png) no-repeat left center;
+                background-size: 12px;
+            }
+            li:nth-child(2) span {
+                background: url(../imgs/icon-nation.png) no-repeat left center;
+                background-size: 12px;
+            }
+            li:nth-child(3) span {
+                background: url(../imgs/icon-born.png) no-repeat left center;
+                background-size: 12px;
+            }
+            li:nth-child(4) span {
+                background: url(../imgs/icon-email.png) no-repeat left center;
+                background-size: 12px;
+            }
+            li:nth-child(5) span {
+                background: url(../imgs/icon-sex.png) no-repeat left center;
+                background-size: 12px;
+            }
+            li:nth-child(6) span {
+                background: url(../imgs/icon-marital.png) no-repeat left center;
+                background-size: 12px;
+            }
+            li:nth-child(7) span {
+                background: url(../imgs/icon-age.png) no-repeat left center;
+                background-size: 12px;
+            }
+            li:nth-child(8) span {
+                background: url(../imgs/icon-phone-number.png) no-repeat left center;
+                background-size: 12px;
+            }
+        }
+
+        .work-experience {
+            ul, dl {
+                margin: 0;
+            }
+
+            ul {
+                padding-bottom: 24px;
+
+                li {
+                    display: block;
+    
+                    h4 {
+                        margin: 0;
+                        margin-top: 24px;
+                        font-size: @font-16;
+                    }
+
+                    dl {
+                        margin-top: 16px;
+                        
+                        li {
+                            color: #a4a4a4;
+                            line-height: 26px;
+                        }
+                    }
+    
+                }
+
+                li:first-child h4 {
+                    margin-top: 18px;
+                }
+            }
+        }
+
+        .edu-experience {
+            padding-bottom: 24px;
+
+            h4 {
+                margin: 0;
+                margin-top: 18px;
+                font-size: @font-16;
+            }
+        }
+
+        .job-intention dl {
+            margin-top: 18px;
+
+            li {
+                color: #a4a4a4;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.articles {
+    margin-bottom: 32px;
+
+    li {
+        display: block;
+        margin-top: 16px;
+        
+        a {
+            display: block;
+            width: 100%;
+            height: 132px;
+            padding: 16px;
+            padding-top: 20px;
+            box-shadow: @box-shadom-article;
+            background-color: white;
+            
+            .title-content {
+                height: 70px;
+                overflow:hidden;
+                text-overflow:ellipsis;
+            }
+
+            h4 {
+                margin: 0;
+                font-size: @font-16;
+                font-weight: normal;
+                color: @font-color-article-title;
+                white-space:nowrap;
+                overflow:hidden;
+                text-overflow:ellipsis;
+            }
+            p {
+                display: block;
+                margin: 0;
+                margin-top: 10px;
+                line-height: 22px;
+                color: @font-color-article-content;
+                white-space: normal;
+                overflow:hidden;
+                text-overflow:ellipsis;
+            }
+
+            .article-brief {
+                padding-top: 10px;
+
+                span {
+                    padding: 3px 12px;
+                    border-radius: 10px;
+                    margin-right: 8px;
+                    background-color: #fafafa;
+                    color: #b7b7b7;
+                    font-weight: 300;
+                }
+
+                span:last-child {
+                    float: right;
+                    padding: 0;
+                    border-radius: 0;
+                    color: @font-color-article-time;
+                    background: none;
+                }
+            }
+        }
+        a:hover {
+            text-decoration: none;
+            opacity: 1;
+
+            transform: scale(1.03);
+            transition: all .1s ease-in-out;
+        }
+    }
+    li:first-child {
+        margin-top: 32px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 890px;
+    }
+}
+
+
