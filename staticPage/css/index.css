@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 10px;
+  background-color: #F5F6F7;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  -webkit-tap-highlight-color: transparent;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+input {
+  border: none;
+  outline-style: none;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.clearfix {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+a.link {
+  color: #4A90E2;
+  text-decoration-line: line;
+}
