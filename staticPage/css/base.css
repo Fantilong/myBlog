@@ -46,3 +46,8 @@ input {
 .clearfix:after {
   zoom: 1;
 }
+@media (min-width: 1200px) {
+  .container {
+    width: 890px;
+  }
+}

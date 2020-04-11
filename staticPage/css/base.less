@@ -7,6 +7,8 @@
 @nav-font-color-usual: #A6A6A6;
 @nav-font-color-active: #FFF;
 @nav-font-color-hover: #FFF;
+@nav-shadom: 0 3px 10px rgba(0,0,0,.20);
+
 
 @fir-screen-bgc: #333230;
 
@@ -21,6 +23,8 @@
 @font-color-article-tip: #CBCBCB;
 @bgc-article-tag: #F9F9F9;
 @box-shadom-article: 2px 2px 9px rgba(0,0,0,.13);
+
+@top-bar-height: 70px;
 
 * {
     margin: 0;
@@ -69,6 +73,12 @@ input {
 }
 .clearfix:after{
     zoom: 1;
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 890px;
+    }
 }
 
 @top-bar: {
@@ -208,5 +218,13 @@ input {
     color: white;
     text-decoration: none;
     opacity: 1;
+}
+@there-is-no-more: {
+    display: block;
+    margin-top: 36px;
+    width: 100%;
+    font-size: @font-12;
+    color: #d3d3d3;
+    text-align: center;
 }
 

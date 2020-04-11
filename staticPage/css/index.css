@@ -46,6 +46,11 @@ input {
 .clearfix:after {
   zoom: 1;
 }
+@media (min-width: 1200px) {
+  .container {
+    width: 890px;
+  }
+}
 .top-bar {
   background-color: #333230;
   height: 70px;
@@ -353,9 +358,4 @@ a.download-resume:hover {
 }
 .articles li:first-child {
   margin-top: 32px;
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 890px;
-  }
 }
