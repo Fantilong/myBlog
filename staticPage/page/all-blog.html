@@ -3,18 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all-blog.css">
     <title>全部博客</title>
 </head>
 <body>
-    <div class="container">
-       <div class="topbar">
-           <h1><a href="#">Project Name</a></h1>
-           <ul>
-            <li><a href="page/project-summary.html">项目总结</a></li>
-            <li class="active"><a href="page/all-blog.html">全部博客</a></li>
-           </ul>
-       </div>  
+    <!-- 头部栏 -->
+    <div class="container-fluid top-bar navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 logo">
+                    <!-- 头部栏 -->
+                    <h1><a href="../index.html">Project Name</a></h1>
+                </div>
+                <div class="col-lg-6 nav">
+                    <ul>
+                        <li><a href="project-summary.html">项目总结</a></li>
+                        <li class="active"><a href="all-blog.html">全部博客</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container article-list">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="bread-crumbs">
+                    <ul class="clearfix">
+                        <li>全部博客&nbsp;</li>
+                        <li class="tier-tag">》</li>
+                        <li>全部文章</li>
+                    </ul>
+                </div>
+                <div class="all-blog-articles">
+                    <ul>
+                        <li>
+                            <a href="articel.html">
+                                <h4>article title article title article title article title…</h4>
+                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis …</p>
+                                <div class="article-brief">
+                                    <span class="article-tag">交互设计</span>
+                                    <span class="article-tag">UI</span>
+                                    <span class="article-tag">语音话术设计</span>
+                                    <span class="pub-time">发布于&nbsp;<i>2019-09-23</i></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="articel.html">
+                                <h4>article title article title article title article title…</h4>
+                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis …</p>
+                                <div class="article-brief">
+                                    <span class="article-tag">交互设计</span>
+                                    <span class="article-tag">UI</span>
+                                    <span class="article-tag">语音话术设计</span>
+                                    <span class="pub-time">发布于&nbsp;<i>2019-09-23</i></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <a class="load-more" href="#" class="load-more">加载更多</a>
+                <!-- <a class="there-is-no-more" href="#" class="load-more">没有了</a> -->
+            </div>
+        </div>
     </div>
 </body>
 </html>
