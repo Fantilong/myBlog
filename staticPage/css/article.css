@@ -149,7 +149,7 @@ input {
 .next-last a i {
   font-style: normal;
 }
-.next-last a:first-child {
+.next-last a:last-child {
   float: right;
 }
 .next-last a:hover {
